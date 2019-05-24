@@ -10,7 +10,7 @@ import countriesReducer from './reducers/countries_reducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const store = createStore(countriesReducer, {countryData:[]}, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(countriesReducer, [], composeEnhancers(applyMiddleware(thunk)));
 
 
 ReactDOM.render(

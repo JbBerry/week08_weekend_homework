@@ -3,7 +3,7 @@ import Form from '../components/Form';
 
 const mapStateToProps = (state) => {
   return {
-    countriesData:state.countriesData
+    countriesData:state
   };
 };
 

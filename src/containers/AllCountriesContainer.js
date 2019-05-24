@@ -3,7 +3,7 @@ import AllCountries from '../components/AllCountries';
 
 const mapStateToProps = (state) => {
   return {
-    countriesData:state.countriesData
+    countriesData:state
   };
 };
 

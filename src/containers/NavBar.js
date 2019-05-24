@@ -8,10 +8,10 @@ const NavBar = () =>{
         <Link to="/">All Countries</Link>
       </div>
       <div className='link-router'>
-        <Link to="/favourite">My Bucket List</Link>
+        <Link to="/bucket-list">My Bucket List</Link>
       </div>
       <div className='link-router'>
-        <Link to="/favourite">Visited Countries</Link>
+        <Link to="/visited">Visited Countries</Link>
       </div>
     </div>
   )

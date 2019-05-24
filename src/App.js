@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import {connect} from 'react-redux';
 
-import AllCountriesContainer from './containers/AllCountriesContainer.';
+import AllCountriesContainer from './containers/AllCountriesContainer';
 import BucketCountriesContainer from './containers/BucketCountriesContainer';
 import FormContainer from './containers/FormContainer'
 import NavBar from './containers/NavBar';

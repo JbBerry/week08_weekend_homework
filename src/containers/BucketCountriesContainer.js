@@ -3,7 +3,7 @@ import BucketCountries from '../components/BucketCountries';
 
 const mapStateToProps = (state) => {
   return {
-    countriesData:state.countriesData
+    countriesData:state
   };
 };
 
