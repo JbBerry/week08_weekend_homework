@@ -1,5 +1,6 @@
 import React from 'react';
 import CountryTile from './CountryTile'
+import './CountriesList.css'
 
 const VisitedCountries = (props) => {
 
@@ -15,11 +16,14 @@ const VisitedCountries = (props) => {
       />
     )
   });
-    return(
-      <div className = 'CountriesContainer'>
+  return(
+    <>
+      <div className = 'countries-title'>Where I've Been</div>
+      <div className = 'countries-container'>
         {countriesList}
       </div>
-  )
+    </>
+)
 }
 
 export default VisitedCountries;

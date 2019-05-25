@@ -1,5 +1,6 @@
 import React from 'react';
 import CountryTile from './CountryTile'
+import './CountriesList.css'
 
 const BucketCountries = (props) => {
 
@@ -15,11 +16,14 @@ const BucketCountries = (props) => {
       />
     )
   });
-    return(
-      <div className = 'CountriesContainer'>
+  return(
+    <>
+      <div className = 'countries-title'>My Bucket List</div>
+      <div className = 'countries-container'>
         {countriesList}
       </div>
-  )
+    </>
+)
 }
 
 export default BucketCountries;

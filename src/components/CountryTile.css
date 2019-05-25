@@ -1,0 +1,51 @@
+.countries-tile{
+  width: 200px;
+  height: 135px;
+  margin: 15px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  background-color: rgba(255,255,255, 0.7);
+  background-blend-mode: color;
+  border-radius: 10px;
+
+  display:grid;
+  grid-template-columns: 120px 80px;
+  grid-template-rows: 1fr 25px;
+  grid-template-areas:
+    "header header"
+    "bucket-button-area visited-button-area"
+}
+.countries-details{
+  padding-top: 20px;
+  grid-area: header;
+  font: 22px "Trebuchet MS", Helvetica, sans-serif;
+  text-overflow: clip;
+  text-align: center;
+}
+.bucket-button-area{
+ grid-area: bucket-button-area;
+ background-color: rgba(30,30,30,0.4);
+ border-radius: 0px 0px 0px 10px;
+}
+.bucket-button{
+  height: 25px;
+  width: 120px;
+  border: 1px solid #4BC0D9;
+  border-radius: 0px 0px 0px 10px;
+  outline: none;
+  background-color: #76E5FC;
+}
+.visited-button-area{
+  grid-area: visited-button-area;
+  background-color: rgba(30,30,30,0.4);
+  border-radius: 0px 0px 10px 0px;
+}
+.visited-button{
+  height: 25px;
+  width: 80px;
+  border: 1px solid #919191;
+  border-radius: 0px 0px 10px 0px;
+  outline: none;
+  background-color: #bababa;
+}

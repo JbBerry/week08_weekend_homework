@@ -1,0 +1,44 @@
+.form-container{
+  height: 30px;
+  line-height: 35px;
+  color: #D4D1E6;
+  background-color: #6457A6;
+
+}
+
+.continent-dropdown{
+  background-color: rgba(0,0,0,0);
+  font: 18px "Trebuchet MS", Helvetica, sans-serif;
+  border: 1px solid #D4D1E6;
+  outline: none;
+  width: 150px;
+  margin-left: 20px;
+  color: #D4D1E6;
+}
+
+.country-dropdown{
+  background-color: rgba(0,0,0,0);
+  font: 18px "Trebuchet MS", Helvetica, sans-serif;
+  border: 1px solid #D4D1E6;
+  outline: none;
+  width: 500px;
+  margin-left: 5px;
+  color: #D4D1E6;
+}
+
+.button {
+  width: 200px;
+  background-color: rgba(0,0,0,0);
+  display: inline-block;
+  font: 18px "Trebuchet MS", Helvetica, sans-serif;
+  color: #D4D1E6;
+  border: 1px solid #D4D1E6;
+  border-radius: 5px;
+  margin-left: 5px;
+  outline:  none;
+}
+
+.button:active{
+  background-color:#D4D1E6;
+  color: #6457A6;
+}

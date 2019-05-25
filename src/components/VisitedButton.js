@@ -1,4 +1,6 @@
 import React from 'react';
+import './CountryTile.css'
+
 
 const VisitedButton = (props) => {
 
@@ -9,7 +11,7 @@ const VisitedButton = (props) => {
   const button = () => {
     if(props.country.status !== 'visited'){
       return (
-        <button onClick={handleVisitedClick}>Visited</button>
+        <button className = 'visited-button' onClick={handleVisitedClick}>Visited</button>
       )
     }else{
       return(null)
@@ -17,7 +19,7 @@ const VisitedButton = (props) => {
   }
 
     return(
-      <div className = 'visited-button'>
+      <div className = 'visited-button-area'>
         {button()}
       </div>
   )

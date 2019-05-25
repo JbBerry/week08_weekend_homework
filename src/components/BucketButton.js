@@ -1,4 +1,5 @@
 import React from 'react';
+import './CountryTile.css'
 
 const BucketButton = (props) => {
 
@@ -9,7 +10,7 @@ const BucketButton = (props) => {
   const button = () => {
     if(props.country.status === ''){
       return (
-        <button onClick={handleBucketClick}>Add to Bucket List</button>
+        <button className = 'bucket-button' onClick={handleBucketClick}>Add to Bucket List</button>
       )
     }else{
       return(null)
@@ -17,7 +18,7 @@ const BucketButton = (props) => {
   }
 
   return(
-    <div className = 'bucket-button'>
+    <div className = 'bucket-button-area'>
       {button()}
     </div>
   )

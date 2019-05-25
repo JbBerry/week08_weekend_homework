@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Form.css'
 
 
 class Form extends Component {
@@ -22,9 +23,10 @@ class Form extends Component {
 
   render(){
     return(
-      <div>
+      <div className = 'form-container'>
         <form onSubmit = {this.handleFormSubmit}>
           <select
+            className = 'continent-dropdown'
             id = 'continent'
             value = {this.defaultContinentText()}
             onChange = {this.handleContinentChange}
@@ -33,6 +35,7 @@ class Form extends Component {
           </select>
 
           <select
+            className = 'country-dropdown'
             id = 'country'
             value = {this.defaultCountryText()}
             onChange = {this.handleCountryChange}

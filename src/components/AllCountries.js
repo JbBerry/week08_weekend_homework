@@ -1,5 +1,6 @@
 import React from 'react';
 import CountryTile from './CountryTile'
+import './CountriesList.css'
 
 const AllCountries = (props) => {
   const countriesList = props.countriesData.map((country,index)=>{
@@ -13,9 +14,12 @@ const AllCountries = (props) => {
     )
   });
     return(
-      <div className = 'CountriesContainer'>
-        {countriesList}
-      </div>
+      <>
+        <div className = 'countries-title'>All Countries</div>
+        <div className = 'countries-container'>
+          {countriesList}
+        </div>
+      </>
   )
 }
 

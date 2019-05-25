@@ -1,0 +1,36 @@
+.navbar{
+  color: #D4D1E6;
+  background-color: #5C2751;
+
+  display:grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: 30px;
+  grid-template-areas:
+  " button-1 button-2 button-3"
+}
+
+.one{
+  grid-area: button-1;
+
+}
+.two{
+  grid-area: button-2;
+
+}
+.three{
+  grid-area: button-3;
+
+}
+
+.link{
+  margin-left: 20px;
+  text-align: center;
+  border-width: thin;
+  font: 24px "Trebuchet MS", Helvetica, sans-serif;
+  color: #C3B0BF;
+}
+.link:visited{
+  margin-left: 20px;
+  font: 24px "Trebuchet MS", Helvetica, sans-serif;
+  color: #C3B0BF;
+}

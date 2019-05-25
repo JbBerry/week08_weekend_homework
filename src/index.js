@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
+
 import countriesReducer from './reducers/countries_reducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -15,7 +16,7 @@ const store = createStore(countriesReducer, [], composeEnhancers(applyMiddleware
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App/>
   </Provider>,
   document.getElementById('root')
 );
