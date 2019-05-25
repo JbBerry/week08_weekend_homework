@@ -106,24 +106,24 @@ class Form extends Component {
     populateCountries(){
       const arrCountries = []
 
-      if (this.state.continent===''){
-        this.props.countriesData.forEach((country,index)=>{
-            arrCountries.push({...country,index})
+      if (this.state.continent===''||this.state.continent==='Continent'){
+        this.props.countriesData.forEach((country)=>{
+            arrCountries.push(country)
       })
       } else {
-        this.props.countriesData.forEach((country,index)=>{
+        this.props.countriesData.forEach((country)=>{
           if (country.region === this.state.continent){
-            arrCountries.push({...country,index})
+            arrCountries.push(country)
           }
         })
       }
 
       const countryOptions = arrCountries.map((country)=>{
         return(
-          <option value={country.index}>{country.name}</option>
+          <option key={country.id} value={country.id}>{country.name}</option>
         )
       })
-      countryOptions.unshift(<option value={-1}>Country</option>)
+      countryOptions.unshift(<option key={-1}>Country</option>)
       return countryOptions;
     }
 }

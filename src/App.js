@@ -36,10 +36,11 @@ const mapDispatchToProps=(dispatch)=>({
       fetch('https://restcountries.eu/rest/v2/all?fields=name;flag;region')
       .then(res=>res.json())
       .then(countriesData=>{
-        countriesData.map((country)=>{
+        countriesData.map((country,index)=>{
           country.status='';
+          country.id=index;
         })
-         dispatch({
+        dispatch({
           type: 'ADD_DATA',
           countriesData
         })

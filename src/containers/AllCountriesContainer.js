@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => {
         id
       })
     },
-    Visited: (id) => {
+    visited: (id) => {
       dispatch({
         type: 'VISITED',
         id

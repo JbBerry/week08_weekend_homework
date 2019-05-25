@@ -2,9 +2,17 @@ import React from 'react';
 import CountryTile from './CountryTile'
 
 const VisitedCountries = (props) => {
-  const countriesList = props.countriesData.map((country,index)=>{
+
+  const visitedCountries = props.countriesData.filter (country => country.status==='visited');
+
+  const countriesList = visitedCountries.map((country,index)=>{
     return(
-      <CountryTile key={index} country={country}/>
+      <CountryTile
+        key={index}
+        country={country}
+        bucketList={props.bucketList}
+        visited={props.visited}
+      />
     )
   });
     return(

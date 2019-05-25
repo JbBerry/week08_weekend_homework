@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    Visited: (id) => {
+    visited: (id) => {
       dispatch({
         type: 'VISITED',
         id
