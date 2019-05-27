@@ -18,7 +18,7 @@ const VisitedCountries = (props) => {
   });
   return(
     <>
-      <div className = 'countries-title'>Where I've Been</div>
+      <div className = 'countries-title'>Visited Countries</div>
       <div className = 'countries-container'>
         {countriesList}
       </div>

@@ -69,7 +69,7 @@ class Form extends Component {
   }
 
   handleContinentChange(event){
-    this.setState({continent:event.target.value, country: -1})
+    this.setState({continent:event.target.value, country: ''})
 
   }
   handleCountryChange(event){
